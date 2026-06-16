@@ -1,0 +1,859 @@
+:: StoryTitle
+絲竹弦音錄：東方神祕樂器大解密
+
+
+:: StoryData
+{
+  "ifid": "FC1CF12A-2E1F-4BDC-9CE5-7B972AA276CA",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "絲竹弦音錄：東方神祕樂器大解密",
+  "zoom": 1
+}
+
+
+:: Ending {"position":"100,1850","size":"100,100"}
+恭喜完成！
+
+你完成了中國音樂展的學習之旅！
+
+你認識了：
+・胡琴
+・揚琴
+・古箏
+・阮
+・柳琴
+・琵琶
+・笛子
+・笙
+
+希望你未來能繼續探索中國音樂的世界！
+
+
+你的總分：
+<<print $score>> / 100
+
+---------------------------------------------------
+
+<<button "重新開始體驗" "Start">>
+    <<set $score to 0>>
+<</button>>
+
+
+:: Introduction {"position":"100,225","size":"100,100"}
+<h1>第一站：中國音樂展</h1>
+
+<p>
+今天，華語老師帶著你來到中國傳統音樂展。
+展覽裡有許多特別的樂器，
+每一種樂器都有自己的聲音和故事。
+</p>
+
+<p>
+老師說：
+「如果了解這些樂器，
+你就能更了解中國音樂之美。」
+</p>
+<p>
+於是你開始參觀展覽。
+</p>
+<h2>胡琴</h2>
+<div style="text-align: center;">
+    <img src="https://png.pngtree.com/element_our/20190603/ourmid/pngtree-illustration-of-erhu-music-image_1435066.jpg" width="450">
+</div>
+<p>
+胡琴是一種拉弦樂器。
+演奏時使用弓拉動琴弦發出聲音。
+聲音柔和，常用來表達情感。
+</p>
+<h2>揚琴</h2>
+<div style="text-align: center;">
+    <img src="https://pic.huitu.com/pic/20230920/1657809_20230920105629844200_0.jpg" width="450">
+</div>
+<p>
+揚琴是一種擊弦樂器。
+演奏者使用小竹棒敲打琴弦。
+聲音清脆明亮。
+</p>
+<h2>古箏</h2>
+<div style="text-align: center;">
+    <img src="https://pic.616pic.com/ys_bnew_img/00/58/40/MOCNMJmqYK.jpg" width="450">
+</div>
+<p>
+古箏有許多琴弦。
+演奏者用手指撥動琴弦發出聲音。
+音色優美，是很受歡迎的中國樂器。
+</p>
+
+<h2>阮</h2>
+<div style="text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrmbcJgE2hM2fYWJq_qg2vX9gpfE_xCLVrXw&s" width="450">
+</div>
+<p>
+阮是一種彈撥樂器。
+外形是圓形琴身，
+聲音溫暖柔和。
+</p>
+
+<h2>柳琴</h2>
+<div style="text-align: center;">
+    <img src="https://pic.616pic.com/ys_bnew_img/00/59/15/Q0ybfZ04XE.jpg" width="450">
+</div>
+<p>
+柳琴外形較小，
+音色明亮，
+常出現在中國民族樂團中。
+</p>
+
+<h2>琵琶</h2>
+<div style="text-align: center;">
+    <img src="https://pic.616pic.com/ys_bnew_img/00/51/84/5Znh6hcCTX.jpg" width="450">
+</div>
+<p>
+琵琶是一種歷史悠久的彈撥樂器。
+演奏技巧豐富，
+可以表現許多不同情緒。
+</p>
+
+<h2>笛子</h2>
+<div style="text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynM1yCqOcAKg0TFa6KGYAyt5lbMRUPu3Dsw&s" width="450">
+</div>
+<p>
+笛子是吹管樂器。
+演奏時需要用嘴吹氣。
+聲音清亮悠揚。
+</p>
+
+<h2>笙</h2>
+<div style="text-align: center;">
+    <img src="https://img.pngsucai.com/01/04/01/c8773f40bea7729f.webp" width="450">
+</div>
+<p>
+笙是一種由許多竹管組成的吹管樂器。
+它可以同時吹出多個音，
+是很有特色的中國樂器。
+</p>
+
+<p>
+看完展覽後，
+老師準備了一場音樂挑戰。
+</p>
+
+<p>
+你準備好了嗎？
+</p>
+
+
+<<set $score = 0>>
+
+
+[[開始挑戰->Q1]]
+
+
+:: Q1 {"position":"100,350","size":"100,100"}
+<h2>Q1 胡琴</h2>
+
+胡琴是怎麼發出聲音的？
+
+<div style="text-align: center;">
+    <img src="https://media.istockphoto.com/id/140277180/zh/%E7%85%A7%E7%89%87/erhu.jpg?s=612x612&w=0&k=20&c=3dCiR_Zmv1kfZNHSKwverVMUNWPdLGeQSvd9Wf-k6uM=" width="450">
+</div>
+
+<br><br>
+
+[[用弓拉琴弦->Q2][$score += 10]] 
+
+
+[[用嘴吹氣->Q1_wrong]]
+
+
+:: Q10 {"position":"100,1700","size":"100,100"}
+<h2>Q10 最後挑戰</h2>
+
+參觀完所有展區後，
+
+老師問你最後一個問題：
+
+下面哪一種樂器是用手指撥動琴弦演奏的？
+
+<div style="text-align: center;">
+    <img src="https://pic.616pic.com/ys_bnew_img/00/55/79/uwFda5olBa.jpg" width="450">
+</div>
+
+
+[[古箏->Ending][$score += 10]]
+
+[[笙->Q10_wrong]]
+
+
+:: Q10_wrong {"position":"250,1700","size":"100,100"}
+<h2>答錯了！</h2>
+
+古箏是使用手指撥動琴弦演奏的樂器。
+
+笙則是吹管樂器。
+
+因此：
+
+O 古箏（正確）
+
+X 笙（錯誤）
+
+<br><br>
+
+[[查看結果->Ending]]
+
+
+:: Q1_wrong {"position":"250,350","size":"100,100"}
+<h2>答錯了！</h2>
+
+胡琴是一種拉弦樂器。
+
+演奏時需要使用弓拉動琴弦發出聲音。
+
+所以：
+
+✓ 用弓拉琴弦（正確）
+
+✗ 用嘴吹氣（錯誤）
+
+因為需要用嘴吹氣的是吹管樂器，例如笛子和笙。
+
+[[前往下一題->Q2]]
+
+
+:: Q2 {"position":"100,500","size":"100,100"}
+<h2>Q2 揚琴</h2>
+
+你來到下一個展區。
+
+老師指著揚琴問你：
+
+揚琴通常是用什麼方式演奏？
+
+
+<div style="text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3ybai_EDy3rB4nd5_s84Jv5s0E653sPjsg&s" width="450">
+</div>
+
+
+[[用竹棒敲打琴弦->Q3][$score += 10]]
+[[用弓拉琴弦->Q2_wrong]]
+
+
+:: Q2_wrong {"position":"250,500","size":"100,100"}
+<h2>答錯了！</h2>
+
+揚琴是一種擊弦樂器。
+
+演奏者會使用小竹棒敲打琴弦發出聲音。
+
+因此：
+
+✓ 用竹棒敲打琴弦（正確）
+
+✗ 用弓拉琴弦（錯誤）
+
+用弓拉琴弦是胡琴等拉弦樂器的演奏方式。
+
+[[前往下一題->Q3]]
+
+
+:: Q3 {"position":"100,650","size":"100,100"}
+<h2>Q3 古箏</h2>
+
+你聽見優美的琴聲。
+
+老師問：
+
+古箏主要是怎麼演奏的？
+
+
+<div style="text-align: center;">
+    <img src="https://cdn-general.cybassets.com/media/W1siZiIsIjMwMDY2L3Byb2R1Y3RzLzQ4NDI4NDI4LzE3NzM5MDI5OTdfY2U1M2JmYmY1ZDA5NDAwNzYzZTgucG5nIl0sWyJwIiwidGh1bWIiLCI2MDB4NjAwIl1d.png?sha=f32854c3d304c89f" width="450">
+</div>
+
+
+[[用手指撥動琴弦->Q4][$score += 10]]
+
+[[用嘴吹氣->Q3_wrong]]
+
+
+:: Q3_wrong {"position":"250,650","size":"100,100"}
+<h2>答錯了！</h2>
+
+古箏有許多琴弦。
+
+演奏時使用手指撥動琴弦發出聲音。
+
+因此：
+
+✓ 用手指撥動琴弦（正確）
+
+✗ 用嘴吹氣（錯誤）
+
+用嘴吹氣是吹管樂器的演奏方式。
+
+[[前往下一題->Q4]]
+
+
+:: Q4 {"position":"100,800","size":"100,100"}
+<h2>Q4 阮</h2>
+
+老師拿出一件圓形的樂器。
+
+這件樂器是什麼特色？
+
+<div style="text-align: center;">
+    <img src="https://images2.gamme.com.tw/news2/2013/50/78/p6CTn6SVlqeW.jpg" width="450">
+</div>
+
+
+<br><br>
+
+[[圓形琴身->Q5][$score += 10]] 
+
+
+
+[[許多竹管組成->Q4_wrong]]
+
+
+:: Q4_wrong {"position":"250,800","size":"100,100"}
+<h2>答錯了！</h2>
+
+阮最明顯的特色是圓形琴身。
+
+許多竹管組成的是笙。
+
+因此：
+
+✓ 圓形琴身（正確）
+
+✗ 許多竹管組成（錯誤）
+
+[[前往下一題->Q5]]
+
+
+:: Q5 {"position":"100,950","size":"100,100"}
+<h2>Q5 柳琴</h2>
+
+老師問：
+
+柳琴的外形有什麼特點？
+
+<div style="text-align: center;">
+    <img src="https://www.cachinamusic.com/archive/image/product1/images/%E6%A2%81%E6%B5%A9%E8%8D%89%E8%8A%B1%E6%A2%A8%E6%9F%B3%E7%90%B4%E6%8B%8B%E5%85%89JPG_350_564.png" width="450">
+</div>
+
+
+[[體型較小->Q6][$score += 10]]
+
+[[體型非常大->Q5_wrong]]
+
+
+:: Q5_wrong {"position":"250,950","size":"100,100"}
+<h2>答錯了！</h2>
+
+柳琴是一種體型較小的彈撥樂器。
+
+因此：
+
+✓ 體型較小（正確）
+
+✗ 體型非常大（錯誤）
+
+[[前往下一題->Q6]]
+
+
+:: Q6 {"position":"100,1100","size":"100,100"}
+<h2>Q6 琵琶</h2>
+
+你看到演奏者正在快速撥動琴弦。
+
+老師問：
+
+琵琶屬於哪一類樂器？
+
+<div style="text-align: center;">
+    <img src="https://cachinamusic.com/archive/image/de9401261724c2a6.jpg" width="450">
+</div>
+
+
+[[彈撥樂器->Q7][$score += 10]]
+
+[[吹管樂器->Q6_wrong]]
+
+
+:: Q6_wrong {"position":"250,1100","size":"100,100"}
+<h2>答錯了！</h2>
+
+琵琶是一種彈撥樂器。
+
+演奏者用手指撥動琴弦發出聲音。
+
+因此：
+
+✓ 彈撥樂器（正確）
+
+✗ 吹管樂器（錯誤）
+
+吹管樂器需要用嘴吹氣，例如笛子。
+
+[[前往下一題->Q7]]
+
+
+:: Q7 {"position":"100,1250","size":"100,100"}
+<h2>Q7 笛子</h2>
+
+老師拿起一支笛子。
+
+笛子是怎麼發出聲音的？
+
+<div style="text-align: center;">
+    <img src="https://shoplineimg.com/60f64a07aaa748004ddfcd06/611a35b5d87bc900118129c5/900x.jpg?" width="450">
+</div>
+
+
+[[用嘴吹氣->Q8][$score += 10]]
+
+[[用竹棒敲打->Q7_wrong]]
+
+
+:: Q7_wrong {"position":"250,1250","size":"100,100"}
+<h2>答錯了！</h2>
+
+笛子是一種吹管樂器。
+
+演奏時需要用嘴吹氣。
+
+因此：
+
+✓ 用嘴吹氣（正確）
+
+✗ 用竹棒敲打（錯誤）
+
+用竹棒敲打是揚琴的演奏方式。
+
+[[前往下一題->Q8]]
+
+
+:: Q8 {"position":"100,1400","size":"100,100"}
+<h2>Q8 笙</h2>
+
+老師展示一件特別的樂器。
+
+笙最大的特色是什麼？
+
+<div style="text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWw8Ie2r51kdmGicthq6-IeZjwO2t-Oz16jNJhUhC0cIdk_JkitGRosw&s=10" width="450">
+</div>
+
+
+[[由許多竹管組成->Q9][$score += 10]]
+
+[[有圓形琴身->Q8_wrong]]
+
+
+:: Q8_wrong {"position":"250,1400","size":"100,100"}
+<h2>答錯了！</h2>
+
+笙是一種由許多竹管組成的吹管樂器。
+
+而圓形琴身是阮的特色。
+
+因此：
+
+✓ 由許多竹管組成（正確）
+
+✗ 有圓形琴身（錯誤）
+
+[[前往下一題->Q9]]
+
+
+:: Q9 {"position":"100,1550","size":"100,100"}
+<h2>Q9 樂器分類</h2>
+
+老師問：
+
+下面哪一種是吹管樂器？
+
+<div style="text-align: center;">
+    <img src="https://bankofculture.com/wp-content/uploads/2018/12/%E7%AB%B9%E7%AC%9B-840x630.jpg" width="450">
+</div>
+
+
+[[笛子->Q10][$score += 10]]
+
+[[古箏->Q9_wrong]]
+
+
+:: Q9_wrong {"position":"250,1550","size":"100,100"}
+<h2>答錯了！</h2>
+
+笛子是吹管樂器。
+
+古箏是彈撥樂器。
+
+因此：
+
+✓ 笛子（正確）
+
+✗ 古箏（錯誤）
+
+[[前往下一題->Q10]]
+
+
+:: Start {"position":"250,225","size":"100,100"}
+<h1>中國音樂之旅：外籍學生的樂器冒險</h1><p>歡迎來到中國音樂之旅！</p><p>有一天，老師帶你參觀一場中國傳統音樂展。在這裡，你將認識許多中國傳統樂器，並透過回答問題獲得分數。</p><p>請先閱讀故事介紹，再開始挑戰。</p>[[開始旅程->Introduction]]
+
+
+:: StoryCaption {"position":"425,100","size":"100,100"}
+認識中國樂器
+中國音樂之旅
+
+<<if $name>>
+玩家：$name
+<</if>>
+
+目前分數：
+$score
+
+
+:: StoryInit {"position":"300,100","size":"100,100"}
+<<set $score = 0>>
+
+
+:: 絲竹弦音錄：東方神祕樂器大解密 {"position":"100,100","size":"100,100"}
+<h2>《絲竹弦音錄：東方神祕樂器大解密》</h2>
+
+從絲弦的撥弄震動，到竹管的氣流共鳴，
+古老的東方樂器中，記載著無數流傳千年的聲音祕密。
+
+這是一本遺落民間的「絲竹弦音錄」，唯有真正能聽懂、認出傳統樂器特色的人，才能翻開它並解開最終的音樂謎題。
+
+探險家，在翻開這本神祕手札之前，請寫下你的名號：
+
+<!-- 建立輸入框 -->
+<<textbox "$name" "">>
+
+<br><br>
+<!-- 這裡改成連到下一頁 -->
+[[翻開絲竹弦音錄，開始挑戰！->Start]]
+
+
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap');
+
+/* ==========================================================================
+   最底層暴力洗色：拔除 SugarCube 所有的黑底，強制改為米白底、紅褐色字
+   ========================================================================== */
+html, 
+body, 
+#ui-bar,           /* 側邊欄 */
+#story,            /* 故事主體外層 */
+#passages,         /* 文章主要容器 */
+.passage,          /* 文本當前區塊 */
+.story,
+#ui-dialog,        /* 跳出視窗（若有） */
+#ui-dialog-body {
+  background-color: #fcf8ed !important; /* 核心：古典米白色背景 */
+  color: #7a1f1d !important;            /* 核心：紅褐色（硃砂墨紅）文字 */
+  font-family: 'Noto Serif TC', serif !important;
+}
+
+/* 頂部、底部、側邊如果有任何 Twine 預設的黑邊框，一律拔掉 */
+#passages, .passage {
+  border: none !important;
+  box-shadow: none !important;
+  max-width: 700px !important; /* 讓文字寬度適中，看起來像書頁 */
+  margin: 40px auto !important;
+}
+
+/* ==========================================================================
+   2. 古典雙線紅褐色內邊框與裝飾
+   ========================================================================== */
+.passage {
+  border: 1px solid #7a1f1d !important;
+  outline: 3px double #7a1f1d !important;
+  outline-offset: -6px !important;
+  padding: 40px 30px !important;
+  position: relative !important;
+}
+
+/* 左下角與右下角古典音樂裝飾浮水印 */
+.passage::before {
+  content: "♩ 𝄢 琵琶弦動" !important;
+  position: absolute !important;
+  bottom: 15px !important;
+  left: 20px !important;
+  color: rgba(122, 31, 29, 0.25) !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 2px !important;
+}
+
+.passage::after {
+  content: "竹管鳴 𝄡 ♪" !important;
+  position: absolute !important;
+  bottom: 15px !important;
+  right: 20px !important;
+  color: rgba(122, 31, 29, 0.25) !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 2px !important;
+}
+
+/* ==========================================================================
+   3. 文字排版（大標與內文）
+   ========================================================================== */
+h2 {
+  font-size: 2.2rem !important;
+  color: #7a1f1d !important;
+  margin-top: 0 !important;
+  margin-bottom: 25px !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+}
+
+p {
+  font-size: 1.15rem !important;
+  line-height: 1.9 !important;
+  color: #7a1f1d !important;
+  margin-bottom: 20px !important;
+  text-align: center !important;
+}
+
+/* ==========================================================================
+   4. SugarCube 預設連結與輸入框美化
+   ========================================================================== */
+/* 把預設藍字連結徹底改成紅褐色古典按鈕 */
+#passages a.link-internal, 
+#passages a.link-external {
+  display: inline-block !important;
+  background: #7a1f1d !important; /* 紅褐色底 */
+  color: #fcf8ed !important;       /* 米白字 */
+  border: 2px solid #541413 !important;
+  padding: 12px 35px !important;
+  font-size: 1.15rem !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  margin: 25px auto 0 auto !important;
+  position: relative !important;
+  letter-spacing: 1px !important;
+  text-align: center !important;
+}
+
+#passages a.link-internal:hover, 
+#passages a.link-external:hover {
+  background: #962927 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 按鈕前後自帶高音譜記號 */
+#passages a.link-internal::before,
+#passages a.link-internal::after {
+  content: " 𝄞 " !important;
+  color: #fcf8ed !important;
+  font-size: 1.2rem !important;
+  margin: 0 8px !important;
+}
+
+/* 簽名輸入區塊與輸入框 */
+.signature-section {
+  margin-top: 35px !important;
+  text-align: center !important;
+  font-size: 1.1rem !important;
+  color: #7a1f1d !important;
+}
+
+.input-line {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 15px !important;
+}
+
+.input-line input, 
+#passages input[type=text] {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid #7a1f1d !important;
+  font-family: 'Noto Serif TC', serif !important;
+  font-size: 1.3rem !important;
+  color: #7a1f1d !important;
+  text-align: center !important;
+  width: 180px !important;
+  padding: 5px 0 !important;
+  border-radius: 0 !important;
+}
+
+.input-line input:focus {
+  outline: none !important;
+  border-bottom-color: #962927 !important;
+}
+/* ==========================================================================
+   補充：強制捕捉「重新開始」與 SugarCube 所有內建按鈕
+   ========================================================================== */
+#passages a.link-internal, 
+#passages a.link-external,
+#passages button,                   /* 捕捉所有原生按鈕 */
+#passages input[type=button],       /* 捕捉可能用 input 做的按鈕 */
+.macro-button,                      /* 捕捉 SugarCube 巨集按鈕 */
+#ui-bar-history [id$="-restart"],   /* 捕捉側邊欄或系統內建的重新開始 */
+a[data-passage="Restart"] {         /* 如果你是手動連到叫 Restart 的 Passage */
+  
+  display: inline-block !important;
+  background: #7a1f1d !important; /* 紅褐色底 */
+  color: #fcf8ed !important;       /* 米白字 */
+  border: 2px solid #541413 !important;
+  padding: 12px 35px !important;
+  font-size: 1.15rem !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  margin: 25px auto 0 auto !important;
+  position: relative !important;
+  letter-spacing: 1px !important;
+  text-align: center !important;
+  font-family: 'Noto Serif TC', serif !important;
+}
+
+/* 懸停效果同步補上 */
+#passages button:hover,
+#passages input[type=button]:hover,
+.macro-button:hover {
+  background: #962927 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 讓重新開始按鈕也自帶高音譜記號 */
+#passages button::before,
+.macro-button::before {
+  content: " 𝄞 " !important;
+  color: #fcf8ed !important;
+  font-size: 1.2rem !important;
+  margin-right: 8px !important;
+}
+#passages button::after,
+.macro-button::after {
+  content: " 𝄞 " !important;
+  color: #fcf8ed !important;
+  font-size: 1.2rem !important;
+  margin-left: 8px !important;
+}
+/* ==========================================================================
+   補充：圖片縮小與四角圓滑（古典柔和風）
+   ========================================================================== */
+#passages img {
+  display: block !important;
+  max-width: 45% !important;   /* 1. 限制圖片最大寬度為書頁的 45%（可依喜好調整，如 50% 或 30%） */
+  height: auto !important;     /* 2. 保持圖片原本的長寬比例，不變形 */
+  margin: 20px auto !important;/* 3. 讓圖片上下留點空隙，並在畫面「左右置中」 */
+  
+  /* 4. 四角圓滑設定 */
+  border-radius: 12px !important; /* 數字越大越圓，12px 帶有古典手札的柔和感 */
+  
+  /* 5. 選擇性加入：微弱的古典紙張陰影，讓圖片融合得更自然 */
+  box-shadow: 0 4px 10px rgba(122, 31, 29, 0.15) !important; 
+  border: 1px solid rgba(122, 31, 29, 0.2) !important; /* 淡淡的紅褐色邊框 */
+  
+  transition: transform 0.3s ease !important;
+}
+
+/* 懸停效果：滑鼠移到圖片上時會稍微放大，增加互動質感 */
+#passages img:hover {
+  transform: scale(1.02) !important;
+}
+/* 1. 縮減主要故事區塊的寬度與上下間距 */
+#passages {
+    max-width: 45em;    /* 預設較寬，改成 45em 或 600px 讓視線更集中 */
+    margin: 0 auto;     /* 居中對齊 */
+    padding: 1em 2em;   /* 縮小上下左右的內邊距 */
+}
+
+/* 2. 調整文字的行高與段落間距 */
+.passage {
+    font-size: 1.1em;   /* 微調字體大小 */
+    line-height: 1.6;   /* 行高，1.5 ~ 1.7 閱讀起來最舒服 */
+}
+
+/* 3. 縮小段落與段落（P標籤）之間的空行距離 */
+.passage p {
+    margin: 0.8em 0;    /* 降低段落與段落之間的上下空白 */
+}
+
+/* 4. 如果覺得左側側邊欄（UI bar）太空，也可以把它縮小 */
+#ui-bar {
+    width: 15em;        /* 縮小側邊欄寬度 */
+}
+#story {
+    margin-left: 17em;  /* 相應調整主畫面左邊界，讓整體更緊湊 */
+}
+/* 1. 調整整個段落的行高與文字間距，讓整體文本變緊湊 */
+.passage {
+    line-height: 1.4;       /* 縮小文字行距（預設通常是 1.6~1.75） */
+}
+
+.passage p {
+    margin: 0.4em 0;        /* 大幅縮減文字段落之間的上下空白 */
+}
+
+/* 2. 針對圖片的緊密排版 */
+.tight-block-img {
+    display: block;         /* 讓圖片維持獨立一行，不跟文字擠在一起 */
+    max-height: 120px;      /* 限制圖片高度變小（可依喜好調整，例如 100px 或 150px） */
+    width: auto;            /* 寬度依比例縮放 */
+    margin: 4px 0;          /* 核心關鍵：上下只留 4 像素的極微小間距，消滅大空白 */
+    
+    /* 如果你想讓小圖在畫面中間，可以解開下面這行的註解： */
+    /* margin: 4px auto; */ 
+}
+/* ==========================================================================
+/* ==========================================================================
+/* ==========================================================================
+   5. 側邊欄（UI-Bar）文字與控制按鈕微調（強力隔行版）
+   ========================================================================== */
+
+/* 1. 強制讓側邊欄內部的所有文字都變成紅褐色，並全部置中 */
+#ui-bar-body, #ui-bar-body *, #story-caption, #story-caption * {
+    color: #7a1f1d !important; 
+    text-align: center !important;
+}
+
+/* 2. 核心：強制讓 StoryCaption 裡面的所有文字、段落、行標籤，下方一律空出一整行的距離 */
+#story-caption,
+#story-caption br,
+#story-caption p,
+#story-caption div,
+#story-caption span {
+    display: block !important;       /* 強制變成獨立一行 */
+    margin-bottom: 1.5rem !important; /* 每行下方強制隔開 1.5 行的距離 */
+    margin-top: 0 !important;
+}
+
+/* 3. 讓最上方的三個小控制按鈕（摺疊、回退、前進）的方框與箭頭都變成紅褐色 */
+#ui-bar-toggle, 
+#ui-bar-history [id$="-backward"], 
+#ui-bar-history [id$="-forward"] {
+    border-color: #7a1f1d !important;
+    color: #7a1f1d !important;
+    background-color: transparent !important; 
+}
+
+/* 滑鼠移到這三個按鈕上時的視覺效果 */
+#ui-bar-toggle:hover, 
+#ui-bar-history [id$="-backward"]:hover, 
+#ui-bar-history [id$="-forward"]:hover {
+    background-color: #7a1f1d !important;
+    color: #fcf8ed !important;
+}
